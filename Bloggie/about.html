@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+    <link rel="icon" href="../images/logo2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        h1 {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        #navigation {
+            position: sticky;
+        }
+
+        .navbar {
+            /* margin: 2% 0; */
+            padding: 5px 0;
+            background-color: rgb(97, 100, 103);
+        }
+
+        .navlink :hover {
+            color: rgb(96, 93, 99);
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        /* .header-left {
+            padding: 10% 0 0 10%;
+        } */
+
+        .logo-img {
+            width: 50px;
+        }
+
+        header {
+            padding: 15% 0 15% 5%;
+            /* background-image: url('https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg?w=2000'); */
+            background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/f28b4022600593.58c272e374fa3.gif');
+        }
+
+        .banner-img {
+            padding: 0%;
+            width: 85%;
+        }
+
+        #feature1 {
+            /* background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/f1da4686128681.5d909dad51629.jpg'); */
+            background-image: linear-gradient(to right, rgb(193, 244, 240), rgb(219, 249, 249), rgb(158, 248, 248));
+            padding: 7%;
+            /* float: left; */
+        }
+
+        /* #feature1 h6 {
+            width: 50%;
+        } */
+
+        #feature2 {
+            /* float: right; */
+            padding: 7%;
+            background-image: linear-gradient(to bottom right, rgb(204, 250, 204), rgb(242, 245, 240), rgb(204, 250, 204));
+        }
+
+        /* #feature2 h6 {
+            width: 50%;
+        } */
+
+        #feature3 {
+            padding: 7%;
+            background-image: linear-gradient(to right, rgb(238, 236, 240), rgb(249, 222, 251), rgb(253, 249, 255));
+        }
+
+        /* #feature3 h6 {
+            width: 50%;
+        } */
+
+        #feature4 {
+            padding: 7%;
+            background-image: linear-gradient(to right, rgb(246, 252, 212), rgb(251, 252, 246), rgb(246, 252, 212));
+        }
+
+        /* #feature4 h6 {
+            width: 50%;
+        } */
+
+        #feature5 {
+            padding: 7%;
+            background-image: linear-gradient(to right, rgb(192, 217, 245), rgb(246, 247, 252), rgb(192, 209, 245));
+        }
+
+        /* #feature5 h6 {
+            width: 50%;
+        } */
+
+        footer {
+            background: var(--exDark);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            background-color: rgb(139, 152, 167);
+        }
+
+        footer p {
+            color: black;
+            margin: 10px 0 0 0;
+        }
+
+        footer a {
+            border-radius: 100%;
+        }
+
+        footer a:hover {
+            background-color: white;
+        }
+    </style>
+
+    <title>Bloggie</title>
+</head>
+
+<body>
+    <section id="navigation">
+        <nav class="navbar navbar-expand-md bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Bloggie</a>
+                <!--<img class="logo-img" src="../images/logo2.png" alt="logo"> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Create</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Upload</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 header-left">
+                    <h1>Publish your Passion, your way</h1>
+                    <h6>Create a unique and beautiful blog easily</h6>
+                </div>
+                <div class="col-md-6 header-right">
+                    <img src="http://static1.squarespace.com/static/5a8f9eee25bf02b3f3e0fc46/t/5cc1e49024a694df9f2552c6/1556210836969/WhatIsYourStory_Logo.png?format=1500w"
+                        alt="" class="img-fluid banner-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="feature1">
+        <div class="container-fluid">
+            <div class="content">
+                <h1>Choose the perfect design</h1>
+                <br>
+                <h6>Create a beautiful blog that fits your style. Choose from a selection of easy-to-use templates – all
+                    with flexible layouts and hundreds of background images – or design something new.</h6>
+            </div>
+            <!-- <img class="img-fluid"
+                src="https://previews.123rf.com/images/scyther5/scyther51912/scyther5191200012/136612231-graphic-designer-drawing-sketches-logo-design-the-concept-of-a-new-brand-professional-creative-occup.jpg"
+                alt=""> -->
+        </div>
+    </section>
+
+    <section id="feature2">
+        <div class="container-fluid">
+            <h1>Get a domain</h1>
+            <h6>Give your blog the perfect home. Get a blogspot.com domain or buy a custom domain with just a few
+                clicks.</h6>
+        </div>
+    </section>
+
+    <section id="feature3">
+        <div class="container-fluid">
+            <h1>Earn money</h1>
+            <h6>Get paid for your hard work. Google AdSense can automatically display relevant targeted ads on your blog
+                so that you can earn income by posting about your passion.</h6>
+        </div>
+    </section>
+
+    <section id="feature4">
+        <div class="container-fluid">
+            <h1>Know your audience</h1>
+            <h6>Find out which posts are a hit with Blogger’s built-in analytics. You’ll see where your audience is
+                coming from and what they’re interested in. You can even connect your blog directly to Google Analytics
+                for a more detailed look.</h6>
+        </div>
+    </section>
+
+    <section id="feature5">
+        <div class="container-fluid">
+            <h1>Hang onto your memories</h1>
+            <h6>Save the moments that matter. Blogger lets you safely store thousands of posts, photos, and more with
+                Google.</h6>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+        <p> <b> BLOGGIE</b></p>
+        <br>
+        <p> <b> &copy Copyright</b></p>
+    </footer>
+</body>
+
+</html>
